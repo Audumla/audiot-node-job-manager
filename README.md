@@ -1,17 +1,18 @@
-CronJobManager
+audiot-node-job-manager
 ==============
 
-A node-cron wrapper that manages many jobs at once. This is built using of [Nick Campbell's node-cron fork](https://github.com/ncb000gt/node-cron).
+A Cron Job Manager to maintain collections of Jobs and provide a method to control reuse and redefinition of those jobs.
+This is based on a fork from [cfurst/CronJobManager](https://github.com/cfurst/CronJobManager) which wraps [node-cron](https://github.com/ncb000gt/node-cron) .
 
 Installation
 =============
 ```bash
-npm install cron-job-manager
+npm install audiot-node-job-manager
 ```
 Synopsis
 ============
 ```javascript
-var CronJobManager = require('cron-job-manager'),
+var CronJobManager = require('audiot-node-job-manager'),
 manager = new CronJobManager( // this creates a new manager and adds the arguments as a new job.
 'a_key_string_to_call_this_job',
 '0 30 * * * *', // the crontab schedule
